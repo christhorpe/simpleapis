@@ -1,0 +1,3 @@
+bulkload_client.py --filename schools_small.csv \
+                     --kind SchoolImport \
+                     --url http://localhost:8092/load

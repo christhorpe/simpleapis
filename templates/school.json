@@ -1,0 +1,25 @@
+<school>
+	<urn>{{school.urn}}</urn>
+	<local_authority_id>{{school.local_authority_id}}</local_authority_id>
+	<local_authority_name>{{school.local_authority_name}}</local_authority_name>
+	<established>{{school.estab}}</established>
+	<school_name>{{school.school_name}}</school_name>
+	<street>{{school.street}}</street>
+	<locality>{{school.locality}}</locality>
+	<address_3>{{school.address_3}}</address_3>
+	<town>{{school.town}}</town>
+	<county>{{school.county}}</county>
+	<postcode>{{school.postcode}}</postcode>
+	<telephone_std>{{school.telephone_std}}</telephone_std>
+	<telephone_number>{{school.telephone_number}}</telephone_number>
+	<head_title>{{school.head_title}}</head_title>
+	<head_first_name>{{school.head_first_name}}</head_first_name>
+	<head_last_name>{{school.head_last_name}}</head_last_name>
+	<head_honours>{{school.head_honours}}</head_honours>
+	<establishment_type>{{school.establishment_type}}</establishment_type>
+	<education_phase>{{school.education_phase}}</education_phase>
+	<statutory_lowest_age>{{school.statutory_lowest_age}}</statutory_lowest_age>
+	<statutory_highest_age>{{school.statutory_highest_age}}</statutory_highest_age>
+</school>
+
+

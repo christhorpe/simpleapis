@@ -1,0 +1,94 @@
+<html>
+
+<style>
+	body {
+		color: #666;
+		font-family: "Georgia", Serif;
+		margin-left: 30px;
+	}
+	
+	h1 {
+		color: #900;
+		font-size: 250%;
+	}
+	
+	h2,
+	h3,
+	h4 {
+		color: #c00;
+		padding: 0px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	
+	div.footer {
+		margin-top: 70px;
+		border-top: 1px dashed #666;
+		padding-top: 5px;
+		width: 900px;
+		margin-left:20px;
+		font-size: 80%;
+		color: #ccc;
+	}
+	
+	a {
+		color: #f33;
+		text-decoration: none;
+		padding: 1px;
+	}
+	
+	a:hover {
+		color: #900;
+		text-decoration: underline;
+		padding: 1px;
+		background-color: #fee;
+	}
+	
+	div.main {
+		width: 900px;
+		margin-left:20px;
+	}
+	
+</style>
+<head>
+</head>
+<body>
+
+<div class="main">	
+	
+<h1>A Simple API for Schools</h1>
+<p>
+	This is the start of the documentation of a very simple API I built for schools data as part of the very wonderful <a href="http://rewiredstate.org/" target="_new">Rewired State</a>. There is a <a href="http://blog.jaggeree.com/post/84708815/why-the-government-should-build-apis-and-let-survival" target="_new">blog post</a> describing why and a bit of how I built it.
+</p>
+<p>
+	At the moment there is about <strong>10% of the data</strong> in there, I'm going to load the rest up, fix the <strong>items</strong> endpoint where I introduced a bug earlier, add an additional endpoint which I think will be useful and build a mini-explorer and a couple of clients for it. It's likely to be later this week I do that as I'm involved in something which launches on Tuesday and I think the early part of the week might be busy ;-)
+</p>
+<h3>Sample queries</h3>		
+<p>
+	There are currently three endpoints <strong>item</strong>, <strong>search</strong> and <strong>items</strong>. At the moment only XML is supported. Will be adding in JSON this week. I'll also hopefully add in some search filtering. 
+</p>
+<h4>/schools-api/item</h4>
+<p>
+	Get a school by the URN for the school (6 digit unique id) - <a href="http://schoolsapi.jaggeree.com/schools-api/item/130908" target="_new">http://schoolsapi.jaggeree.com/schools-api/item/130908</a>
+</p>
+<h4>/schools-api/search</h4>
+<p>
+	Search for Brighton - <a href="http://schoolsapi.jaggeree.com/schools-api/search?query=Brighton" target="_new">http://schoolsapi.jaggeree.com/schools-api/search?query=Brighton</a>
+</p>
+<h4>/schools-api/items</h4>
+<p>
+	Schools with town listed as Brighton - <a href="http://schoolsapi.jaggeree.com/schools-api/items/town/Brighton" target="_new">http://schoolsapi.jaggeree.com/schools-api/items/town/Brighton</a>
+</p>
+<p>
+	Schools with the name "Pipworth Community Primary School" - <a href="http://schoolsapi.jaggeree.com/schools-api/items/school_name/Pipworth%20Community%20Primary%20School" target="_new">http://schoolsapi.jaggeree.com/schools-api/items/school_name/Pipworth%20Community%20Primary%20School</a>
+</p>
+<p>
+	Schools with the LEA of West Sussex - <a href="http://schoolsapi.jaggeree.com/schools-api/items/local_authority_name/West%20Sussex" target="_new">http://schoolsapi.jaggeree.com/schools-api/items/local_authority_name/West%20Sussex</a>
+</p>
+<p>
+	Schools in the county of South Yorkshire - <a href="http://schoolsapi.jaggeree.com/schools-api/items/county/South%20Yorkshire" target="_new">http://schoolsapi.jaggeree.com/schools-api/items/county/South%20Yorkshire</a>
+</p>
+</div>
+<div class="footer">Created lovingly by <a href="http://blog.jaggeree.com">Jaggeree</a> as a project for <a href="http://rewiredstate.org/" target="_new">Rewired State</a></div>
+</body>
+</html>

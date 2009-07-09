@@ -1,0 +1,3 @@
+<schools {% if list %}{{parameter_name}}="{{parameter_value}}"{% endif %}{% if search %}search="{{query}}"{% endif %}>
+{% for school in schools %}{% include "school.xml" %}{% endfor %}
+</schools>
